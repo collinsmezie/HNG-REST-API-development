@@ -132,29 +132,33 @@ The base URL for all API endpoints is http://your-api-base-url/.
      "name": "John Doe"
    }
 
+
 2. Get User by ID
 
-
-```GET /api/users/5ffdb3b243454f35d8f41e12
+   ```http
+   GET /api/users/5ffdb3b243454f35d8f41e12
 
 3. Get All Users
 
-GET /api/users
+    ```http
+    GET /api/users
 
 
 4. Update User by ID
 
+    ```http
+    PUT /api/users/5ffdb3b243454f35d8f41e12
+    Content-Type: application/json
 
-PUT /api/users/5ffdb3b243454f35d8f41e12
-Content-Type: application/json
-
+```json
 {
   "name": "Updated Name"
 }
 
+```
 
 5. Delete User by ID
-
+```http
 DELETE /api/users/5ffdb3b243454f35d8f41e12
 
 ## Known Limitations and Assumptions
