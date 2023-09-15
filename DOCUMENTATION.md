@@ -160,6 +160,7 @@ The base URL for all API endpoints is http://your-api-base-url/.
 5. Delete User by ID
 ```http
 DELETE /api/users/5ffdb3b243454f35d8f41e12
+```
 
 ## Known Limitations and Assumptions
 
