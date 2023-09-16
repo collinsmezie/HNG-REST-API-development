@@ -4,7 +4,7 @@ This documentation outlines the usage of the HNGx REST API. The API allows you t
 
 ## API Base URL
 
-The base URL for all API endpoints is http://your-api-base-url/.
+The base URL for all API endpoints is https://hngxapi-kggb.onrender.com/api.
 
 ## Standard Formats for Requests and Responses
 
