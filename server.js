@@ -28,8 +28,13 @@ function startServer() {
 
   // ... Define your API routes here ...
   app.post('/api/add_user', async (req, res) => {
+    const nameValidator = /^[A-Za-z]+$/; 
     try {
       const { name } = req.body;
+      if(!name || !nameValidator.test(name)){
+        res.status(400).json({ error: 'Name must be a string containing only alphabetic characters' });
+        return
+      }
       const result = await collection.insertOne({ name });
       res.status(201).json(result);
     } catch (error) {
